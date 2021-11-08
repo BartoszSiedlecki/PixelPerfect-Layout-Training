@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body{
+      background: rgb(255, 255, 255);
+      font-family: 'Roboto', sans-serif;
+    }
+    
+    #container{
+      width: 1000px;
+      height: 1000px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 50px;
+    }
+
+    #top-bar{
+      border-bottom: 1px solid gray;
+      width: 1000px;
+    }
+
+    #logo{
+      margin-top: 20px;
+      margin-right: 50px;
+      float: left;
+    }
+
+    #menu{
+      float: left;
+      margin-right: 290px;
+    }
+
+    #profile{
+      margin-bottom: 20px;
+    }
+    
+    #cart{
+      margin-bottom: 30px;
+    }
+
+    #cart:hover{
+      cursor: pointer;
+    }
+
+    #profile-icon{
+      width: 64px;
+      height: 64px;
+      margin-bottom: 10px;
+      margin-left: 40px;
+    }
+
+    #profile-icon:hover{
+      cursor: pointer;
+    }
+
+    .option{
+      float: left;
+      margin-left: 25px;
+      color: gray;
+      font-weight: 200;
+    }
+
+    .option:hover{
+      cursor: pointer;
+      color: orangered;
+    }
+
+    #content{
+      width: 1000px;
+      float: left;
+    }
+
+    #content-left{
+      width: 500px;
+      height: 700px;
+      float: left;
+    }
+    
+    #main-img{
+      margin-top: 100px;
+      margin-left: 50px;
+      height: 475px;
+      width: 475px;
+    }
+
+    #img-options{
+      margin-left: 41px;
+      width: 500px;
+    }
+
+    .img-option{
+      height: 100px;
+      padding: 10px;
+    }
+
+    #content-right{
+      float: left;
+      width: 400px;
+      margin-top: 150px;
+      margin-bottom: 100px;
+      margin-left: 100px;
+    }
+
+    h3{
+      color: orange;
+      letter-spacing: 2px;
+      font-size: 12px;
+    }
+
+    h1{
+      font-size: 38px;
+      font-weight: 600;
+    }
+
+    h5{
+      color: gray;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    h2{
+      font-size: 28px;
+      font-weight: 600;
+      float: letf;
+    }
+
+    .discount{
+      float: left;
+      height: 0px;
+    }
+
+    .discount2{
+      padding: 4px;
+      width: 35px;
+      margin-top: 50px;
+      margin-left: 125px;
+      font-size: 16px;
+      background-color: rgb(250, 214, 171);
+    }
+
+    h4{
+      color: gray;
+    }
+
+    #add-to-cart{
+      margin-top: 50px;
+      font-size: 24px;
+    }
+
+    #footer{
+      clear: both;
+    }
+
+    button{
+      background-color: rgba(255, 255, 255, 0.884);
+      font-size: 24px;
+      width: 40px;
+      color: orange;
+      margin-left: 10px;
+      margin-right: 10px;
+      border: none;
+    }
+
+    button:hover{
+      cursor: pointer;
+      color: gray;
+    }
+
+    .add{
+      width: 210px;
+      height: 40px;
+      background-color: orangered;
+      color: white;
+      font-size: 16px;
+    }
+
+    .count{
+      margin-top: 5px;
+    }
+
+    img:hover{
+      cursor: pointer;
+      transform: scale(0.9);
+    }
+
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <div id="top-bar">
+      <div id="logo">
+        <img src="images/logo.svg"/>
+      </div>
+      <div id="menu">
+        <h4 class="option">Collections</h4>
+        <h4 class="option">Men</h4>
+        <h4 class="option">Women</h4>
+        <h4 class="option">About</h4>
+        <h4 class="option">Contact</h4>
+      </div>
+      <div id="profile">
+        <img id="cart" src="images/icon-cart.svg"/>
+        <img id="profile-icon" src="images/image-avatar.png"/>
+      </div>
+    </div>
+    <div id="content">
+      <div id="content-left">
+        <img id="main-img" src="images/image-product-1.jpg"/>
+        <div id="img-options">
+          <img class="img-option" src="images/image-product-1-thumbnail.jpg"/>
+          <img class="img-option" src="images/image-product-2-thumbnail.jpg"/>
+          <img class="img-option" src="images/image-product-3-thumbnail.jpg"/>
+          <img class="img-option" src="images/image-product-4-thumbnail.jpg"/>
+        </div>
+      </div>
+      <div id="content-right">
+        <h3>SNEAKER COMPANY</h3>
+
+        <h1>Fall Limited Edition Sneakers</h1>
+
+        <h5>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</h5>
+
+        <h2 class="discount">$125.00</h2>  <h3 class="discount2">50%</h3>
+        <div style="clear: both;"></div>
+        <h4><s>$250.00</s></h4>
+
+        <div id="add-to-cart">
+          <button> <img src="images/icon-minus.svg"/> </button> 0 <button> <img src="images/icon-plus.svg"/> </button>  
+          <button class="add"> <img class="add-cart" src="images/icon-cart.svg"/> Add to cart </button>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
